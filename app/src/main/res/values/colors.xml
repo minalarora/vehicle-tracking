@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="deviderColor">#BDBDBD</color>
+
+    <color name="mid_gray">#2D000000</color>
+    <color name="dull_gray">#bfd1d0ce</color>
+    <color name="gen_black">#dc000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="button_color">#DC1F3F</color>
+    <color name="gray">#808080</color>
+    <color name="gray_light">#88808080</color>
+    <color name="light_gray">#34d3d3d3</color>
+    <color name="blue">#f30c0cae</color>
+    <color name="dull_black">#63000000</color>
+    <color name="dull_button_color">#CBED6C0D</color>
+    <color name="green">#008000</color>
+    <color name="lightgreen">#8BC34A</color>
+    <color name="skyblue">#074ab0</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="orrang">#e6700e</color>
+    <color name="item_place_title">#2c3e51</color>
+    <color name="item_place_subtitle">#7f8c8d</color>
+    <color name="place_details_background">#1e000000</color>
+
+    <color name="cardview_weather_start_color">#fab527</color>
+    <color name="cardview_weather_center_color">#f9e388</color>
+    <color name="cardview_weather_end_color">#efc74f</color>
+
+    <color name="cardview_timeline_start_color">#7ebdc2</color>
+    <color name="cardview_timeline_end_color">#91d3d9</color>
+
+    <color name="cardview_trip_start_color">#3ab795</color>
+    <color name="cardview_trip_end_color">#12eaaf</color>
+
+    <color name="cardview_red_start_color">#FFFF0000</color>
+    <color name="cardview_red_end_color">#6BFF0000</color>
+    <color name="light_white">#DCFFFFFF</color>
+    <color name="primaryTextColor">#464646</color>
+
+    <color name="cardview_green_start_color">#3DA041</color>
+    <color name="cardview_green_center_color">#97E69B</color>
+    <color name="cardview_green_end_color">#4FC054</color>
+
+    <color name="cardview_red_start_colr">#F44336</color>
+    <color name="cardview_red_center_color">#F87D75</color>
+    <color name="cardview_red_end_colr">#F3685D</color>
+
+    <color name="un">#0001fd</color>
+    <color name="un1">#670015</color>
+    <color name="un2">#ff2f15</color>
+    <color name="un3">#dc019f</color>
+</resources>

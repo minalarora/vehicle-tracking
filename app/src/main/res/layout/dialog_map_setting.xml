@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mid_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_dailog"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Map Setting"
+                android:textStyle="bold"
+                android:textColor="@color/gen_black"
+                android:padding="@dimen/text_size_xlarge"
+                android:textSize="@dimen/text_size_xlarge"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/text_size_large"
+                android:layout_marginLeft="@dimen/text_size_large"
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="GOOGLE"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_medium"
+                    android:gravity="center_vertical"/>
+                <CheckBox
+                    android:text="Traffic layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_medium"
+                    android:checked="true"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+            </RadioGroup>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/layout_margin_10"
+                android:layout_marginBottom="@dimen/text_size_large">
+                <TextView
+                    android:id="@+id/cancel_map_setting"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="CLOSE"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

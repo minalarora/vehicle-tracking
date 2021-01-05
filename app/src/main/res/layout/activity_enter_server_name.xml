@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.EnterServerName">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_otp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gen_white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:text="Enter Your Mobile number to receive One Time Password"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_search_button_round"
+        android:descendantFocusability="beforeDescendants"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/mobile_gray"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:hint="Enter Mobile No."
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp">
+
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/border_button"
+        android:padding="15dp"
+        android:text="@string/getotp"
+        android:textAlignment="center"
+        android:textColor="@color/gen_white"
+        android:textSize="@dimen/text_size_xmedium"
+        android:textStyle="bold" />
+</LinearLayout>

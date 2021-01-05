@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045442612020",
+    "firebase_url": "https://vehicle-tracking-eade2.firebaseio.com",
+    "project_id": "vehicle-tracking-eade2",
+    "storage_bucket": "vehicle-tracking-eade2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045442612020:android:f21e0354c7675c3ebe3361",
+        "android_client_info": {
+          "package_name": "com.immortal.vehicletracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045442612020-klh17chbo0qc66qvssfh7j3m168orerb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.immortal.vehicletracking",
+            "certificate_hash": "900b8f1005eebc17bd5dc893d9d34c7e6b166bc5"
+          }
+        },
+        {
+          "client_id": "1045442612020-jn0fc2jk19533fuufgvgmktb6brpdo3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLWzxamnDZAd3NirMjGhwKDJ34D-54NfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045442612020-jn0fc2jk19533fuufgvgmktb6brpdo3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

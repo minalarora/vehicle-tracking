@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/start_up_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/startup_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Start Up Screen"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/alert_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/alert_mv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Alert"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/port_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/usb_cable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Port"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/map_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/settings_motorv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Map Setting"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/permission_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/shield" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:onClick="gotoPermissionPage"
+                    android:text="Permission"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/parking_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/parking_mv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Parking"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#9e9e9e">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/disconnect_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_large"
+                android:paddingBottom="@dimen/text_size_large">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/denied" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:layout_marginRight="@dimen/layout_margin_10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Disconnected"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/text_size_xmedium" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/arrow_right_mv" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

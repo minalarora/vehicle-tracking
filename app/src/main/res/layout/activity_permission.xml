@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PermissionActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_margin_10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"
+            android:textColor="@color/gen_black"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:textSize="@dimen/text_size_large"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Permission used for to get phone details for login purpose."
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:textSize="@dimen/text_size_xmedium" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/success"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textStyle="bold"
+            android:textColor="@color/gen_black"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Permission used for to show your current location on live tracking screen."
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:textSize="@dimen/text_size_xmedium" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/success"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage"
+            android:textStyle="bold"
+            android:textColor="@color/gen_black"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_size_large"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Permission used for access multiple map feature."
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:textSize="@dimen/text_size_xmedium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/colorPrimary"
+                android:src="@mipmap/success" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
