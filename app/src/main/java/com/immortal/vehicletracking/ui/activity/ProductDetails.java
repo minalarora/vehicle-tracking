@@ -1,10 +1,5 @@
 package com.immortal.vehicletracking.ui.activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.app.ActivityManager;
 import android.app.Dialog;
@@ -12,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
@@ -34,6 +28,11 @@ import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -62,7 +61,6 @@ import org.json.JSONObject;
 
 import static com.android.volley.DefaultRetryPolicy.DEFAULT_TIMEOUT_MS;
 import static com.immortal.vehicletracking.helperClass.ApiConstants.SHARE_URL;
-import static com.immortal.vehicletracking.helperClass.ApiConstants.UPDATE_DRIVER;
 import static com.immortal.vehicletracking.helperClass.ApiConstants.VAHICLE_DETAILS;
 import static com.immortal.vehicletracking.utils.Utils.ac_alarm_status;
 
@@ -103,10 +101,12 @@ public class ProductDetails extends AppCompatActivity implements OnMapReadyCallb
     private Toolbar toolbar;
     private String driver_name;
     private String driver_phone;
+    private boolean isFirst=true;
     private String driver_id;
     protected PowerManager.WakeLock mWakeLock;
     private double curr_lat_navigation, curr_lng_navigation;
     private Intent intent;
+    private boolean isMarkerFirst=true;
     UserPreferences userPreferences = UserPreferences.getUserPreferences();
     private String vehicle_name;
     private String vehicle_no;
@@ -386,14 +386,18 @@ public class ProductDetails extends AppCompatActivity implements OnMapReadyCallb
                     drawable = R.drawable.ic_car_green;
 
                 }
+
+                mMap.clear();
+
                 mPositionMarker = mMap.addMarker(new MarkerOptions()
                         .flat(true)
                         .icon(BitmapDescriptorFactory
                                 .fromResource(drawable))
-                        .anchor(0.5f, 0.5f)
                         .position(
                                 new LatLng(curr_lat, curr_lng)));
+
             }
+
 //            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
 //            CameraPosition cameraPosition = new CameraPosition.Builder()
@@ -405,20 +409,17 @@ public class ProductDetails extends AppCompatActivity implements OnMapReadyCallb
 //            mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
 
 //            if (i == 0) {
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(curr_lat, curr_lng), 18.0f));
 
+            if(isFirst){
+
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(curr_lat, curr_lng), 18.0f));
+                isFirst=false;
+
+            }
 //                i++;
 //            }
 
 //            mPositionMarker.setRotation(bearingBetweenLocations(mPositionMarker.getPosition(), new LatLng(curr_lat, curr_lng)));
-            if (check_lat != curr_lat) {
-                animateMarker(mPositionMarker, temp);
-                check_lat = curr_lat;
-                Log.e("check->>", "if");
-                // Helper method for smooth
-            } else {
-                Log.e("check->>", "else");
-            }
             // animation
 
             //mMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(curr_lat, curr_lng)));
@@ -427,6 +428,15 @@ public class ProductDetails extends AppCompatActivity implements OnMapReadyCallb
 //                    .zoom(12)
 //                    .build();
 //            mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+            if (check_lat != curr_lat) {
+                    animateMarker(mPositionMarker, temp);
+                    check_lat = curr_lat;
+                    Log.e("check->>", "if");
+                    // Helper method for smooth
+                } else {
+                    Log.e("check->>", "else");
+                }
 
 
         } catch (JSONException e) {
@@ -778,6 +788,10 @@ public class ProductDetails extends AppCompatActivity implements OnMapReadyCallb
     }
 
     public void gotoVehicle(View view) {
+
+        isMarkerFirst=true;
+        isFirst=true;
+
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(curr_lat_navigation, curr_lng_navigation), 18.0f));
     }
 
